@@ -1,4 +1,0 @@
-interface:
-  display_name: "Andrej Lens"
-  short_description: "Understand code through words, visuals, and video"
-  default_prompt: "Use $andrej-lens to explain this system with the format that makes its behavior easiest to inspect."

@@ -1,9 +1,9 @@
 ---
-name: andrej-lens
+name: andrej-explains
 description: Explain code, architecture, debugging traces, PRs, and language-model outputs through STE-inspired writing, diagrams, interactive HTML, or narrated videos. Use when a developer needs to understand or inspect a technical system or proposed change.
 ---
 
-# Andrej Lens
+# Andrej Explains
 
 Turn technical complexity into an artifact the developer can inspect, manipulate, and understand. As agents do more implementation work, help the human oversee behavior, assumptions, tradeoffs, and evidence. A bespoke, disposable explainer can be worth building for a single decision.
 
