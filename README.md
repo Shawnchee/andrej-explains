@@ -1,13 +1,13 @@
 <div align="center">
 
-# Explain Dev
+# Andrej Lens
 
 ### Make the work of AI easier to understand.
 
 **Clear words → useful diagrams → interactive explainers → narrated videos**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-2563eb.svg)](LICENSE)
-[![skills.sh](https://skills.sh/b/Shawnchee/explain-dev)](https://skills.sh/Shawnchee/explain-dev)
+[![skills.sh](https://skills.sh/b/Shawnchee/andrej-lens)](https://skills.sh/Shawnchee/andrej-lens)
 
 An agent skill for understanding code, architecture, bugs, pull requests, and language-model outputs.
 
@@ -15,42 +15,42 @@ An agent skill for understanding code, architecture, bugs, pull requests, and la
 
 ---
 
-As agents do more of the implementation, developers spend more time understanding and overseeing the result. Explain Dev turns that result into something you can read, inspect, manipulate, or watch—even when the artifact is useful for only one decision.
+As agents do more of the implementation, developers spend more time understanding and overseeing the result. Andrej Lens turns that result into something you can read, inspect, manipulate, or watch—even when the artifact is useful for only one decision.
 
 ## Install
 
 Requires Node.js and an agent that supports skills.
 
 ```bash
-npx skills add Shawnchee/explain-dev --skill explain-dev
+npx skills add Shawnchee/andrej-lens --skill andrej-lens
 ```
 
 For Codex across projects:
 
 ```bash
-npx skills add Shawnchee/explain-dev --skill explain-dev --agent codex --global
+npx skills add Shawnchee/andrej-lens --skill andrej-lens --agent codex --global
 ```
 
 For Claude Code in the current project:
 
 ```bash
-npx skills add Shawnchee/explain-dev --skill explain-dev --agent claude-code
+npx skills add Shawnchee/andrej-lens --skill andrej-lens --agent claude-code
 ```
 
 Inspect the available skill before installation:
 
 ```bash
-npx skills add Shawnchee/explain-dev --list
+npx skills add Shawnchee/andrej-lens --list
 ```
 
 The installer supports agent selection and project or global scope. See the [official CLI documentation](https://github.com/vercel-labs/skills#options).
 
 ## Use it
 
-In Codex, invoke `$explain-dev`. In other agents, ask the agent to use the `explain-dev` skill with the agent's supported invocation syntax.
+In Codex, invoke `$andrej-lens`. In other agents, ask the agent to use the `andrej-lens` skill with the agent's supported invocation syntax.
 
 ```text
-Use $explain-dev to explain the authentication flow in this repository.
+Use $andrej-lens to explain the authentication flow in this repository.
 Choose the format that makes the trust boundaries easiest to understand.
 ```
 
@@ -66,22 +66,22 @@ Choose a format when you know what you need:
 ### More development prompts
 
 ```text
-Use $explain-dev to inspect this model-generated implementation.
+Use $andrej-lens to inspect this model-generated implementation.
 Separate behavior proven by code or tests from assumptions and open questions.
 ```
 
 ```text
-Use $explain-dev to compare the current architecture with this proposed change.
+Use $andrej-lens to compare the current architecture with this proposed change.
 Show the trigger, before/after behavior, and one important failure case.
 ```
 
 ```text
-Use $explain-dev to create a narrated video explaining this algorithm.
+Use $andrej-lens to create a narrated video explaining this algorithm.
 Use ElevenLabs with my configured API key. Include captions and render instructions.
 ```
 
 ```text
-Use $explain-dev to build a disposable HTML onboarding explainer for this codebase.
+Use $andrej-lens to build a disposable HTML onboarding explainer for this codebase.
 Let me step through one request and inspect the state at each boundary.
 ```
 
@@ -110,12 +110,12 @@ The skill itself is Markdown and has no runtime dependencies. Artifact generatio
 
 Video and narration tools may require downloads, hardware, credentials, or paid services. The agent checks current documentation and available tools before choosing. Keys stay outside source files and exported artifacts. Missing rendering or playback checks are reported explicitly; a storyboard is not passed off as a finished video.
 
-This skill explains observable model output and implementation evidence. It does not claim access to a model's private reasoning. Optional tools and services are not bundled, and this project is not affiliated with ASD, ElevenLabs, or 3Blue1Brown.
+This skill explains observable model output and implementation evidence. It does not claim access to a model's private reasoning. Optional tools and services are not bundled, and this project is not affiliated with Andrej Karpathy, ASD, ElevenLabs, or 3Blue1Brown.
 
 ## Inside the skill
 
 ```text
-skills/explain-dev/
+skills/andrej-lens/
 ├── SKILL.md                 Format selection and evidence-first workflow
 ├── agents/openai.yaml       Codex display metadata
 └── references/
