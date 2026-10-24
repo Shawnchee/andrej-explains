@@ -43,7 +43,7 @@ Inspect the available skill before installation:
 npx skills add Shawnchee/andrej-explains --list
 ```
 
-The installer supports agent selection and project or global scope. See the [official CLI documentation](https://github.com/vercel-labs/skills#options).
+The installer supports agent selection and project or global scope. See the [official CLI documentation](https://github.com/vercel-labs/skills/blob/main/docs/commands.md#options).
 
 ## Use it
 
